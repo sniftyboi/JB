@@ -4,20 +4,6 @@ local Window = Library.CreateLib("test", "Sentinel")
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
 
-
-	MainSection:NewButton("Remove UI", "Just test", function()
-		game.Players.LocalPlayer.PlayerGui.AppUI.Enabled = false
-		game.Players.LocalPlayer.PlayerGui.HotbarGui.Enabled = false
-		game.Players.LocalPlayer.PlayerGui.LevelGui2.Enabled = false
-	end)
-
-	
-	MainSection:NewButton("Show UI", "Just test", function()
-		game.Players.LocalPlayer.PlayerGui.AppUI.Enabled = true
-		game.Players.LocalPlayer.PlayerGui.HotbarGui.Enabled = true
-		game.Players.LocalPlayer.PlayerGui.LevelGui2.Enabled = true
-    end)
-
     MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
